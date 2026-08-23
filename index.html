@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VoiceType - Speech to Text</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            🎙️ VoiceType
+        </div>
+
+        <div class="status">
+            <span id="statusDot"></span>
+            <span id="statusText">Ready</span>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="hero">
+            <h1>Speech to Text</h1>
+
+            <p>
+                Convert your voice into accurate text instantly.
+                Speak naturally and let VoiceType do the typing.
+            </p>
+        </section>
+
+
+        <section class="controls">
+
+            <div class="control-group">
+                <label for="language">Language</label>
+
+                <select id="language">
+                    <option value="en-US">English (US)</option>
+                    <option value="en-GB">English (UK)</option>
+                    <option value="hi-IN">Hindi</option>
+                    <option value="fr-FR">French</option>
+                    <option value="de-DE">German</option>
+                    <option value="es-ES">Spanish</option>
+                </select>
+            </div>
+
+            <button id="startBtn" class="start-btn">
+                🎙️ Start Recording
+            </button>
+
+            <button id="stopBtn" class="stop-btn" disabled>
+                ⏹ Stop
+            </button>
+
+        </section>
+
+
+        <section class="editor-card">
+
+            <div class="editor-header">
+
+                <h2>Transcription</h2>
+
+                <div class="word-count">
+                    Words: <span id="wordCount">0</span>
+                </div>
+
+            </div>
+
+
+            <textarea id="transcript" placeholder="Your speech will appear here..."></textarea>
+
+
+            <div class="editor-actions">
+
+                <button id="copyBtn">
+                    📋 Copy
+                </button>
+
+                <button id="clearBtn">
+                    🗑️ Clear
+                </button>
+
+                <button id="downloadBtn">
+                    ⬇️ Download
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="info-grid">
+
+            <div class="info-card">
+                <div class="icon">🎤</div>
+                <h3>Voice Recognition</h3>
+                <p>
+                    Convert spoken words into text in real time.
+                </p>
+            </div>
+
+
+            <div class="info-card">
+                <div class="icon">🌐</div>
+                <h3>Multiple Languages</h3>
+                <p>
+                    Choose from several supported languages.
+                </p>
+            </div>
+
+
+            <div class="info-card">
+                <div class="icon">💾</div>
+                <h3>Save Your Work</h3>
+                <p>
+                    Download your transcription whenever you need it.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            VoiceType © 2026 | Speech Recognition Application
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
